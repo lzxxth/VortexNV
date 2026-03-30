@@ -8,7 +8,7 @@ return {
 			return require("vortexnv.configs.telescope")
 		end,
     keys = {
-      {"<leader>ff", "<cmd>Telescope find_file<cr>", desc = "Telescope [F]ind [F]ile" },
+      {"<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Telescope [F]ind [F]ile" },
     }, 
 	},
 
