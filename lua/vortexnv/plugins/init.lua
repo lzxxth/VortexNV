@@ -21,8 +21,10 @@ return {
     "nvim-mini/mini.nvim",
     version = false,
     
-    require("mini.ai").setup(),
-    require("mini.comment").setup(),
-    require("mini.surround").setup()
+    config = function()
+      require("mini.ai").setup()
+      require("mini.comment").setup()
+      require("mini.surround").setup()
+    end,
   },
 }
