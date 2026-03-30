@@ -7,9 +7,6 @@ return {
 		opts = function()
 			return require("vortexnv.configs.telescope")
 		end,
-    keys = {
-      {"<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Telescope [F]ind [F]ile" },
-    }, 
 	},
 
 	{
@@ -29,6 +26,15 @@ return {
       require("mini.comment").setup()
       require("mini.pairs").setup()
       require("mini.surround").setup()
+    end,
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("tokyonight")
     end,
   },
 }
