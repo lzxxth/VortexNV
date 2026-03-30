@@ -11,7 +11,6 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-		cmd = { "TSInstall" },
 		build = ":TSUpdate",
 		opts = function()
 			return require("vortexnv.configs.treesitter")
@@ -21,5 +20,7 @@ return {
   {
     "nvim-mini/mini.nvim",
     version = false,
+    
+    require("mini.ai").setup()
   },
 }
