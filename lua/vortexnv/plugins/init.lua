@@ -7,6 +7,9 @@ return {
 		opts = function()
 			return require("vortexnv.configs.telescope")
 		end,
+    keys = {
+      {"<leader>ff", "<cmd>Telescope find_file<cr>", desc = "Telescope [F]ind [F]ile" },
+    }, 
 	},
 
 	{
@@ -20,10 +23,11 @@ return {
   {
     "nvim-mini/mini.nvim",
     version = false,
-    
+
     config = function()
       require("mini.ai").setup()
       require("mini.comment").setup()
+      require("mini.pairs").setup()
       require("mini.surround").setup()
     end,
   },
