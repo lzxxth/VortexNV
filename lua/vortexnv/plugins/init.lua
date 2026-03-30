@@ -17,4 +17,9 @@ return {
 			return require("vortexnv.configs.treesitter")
 		end,
 	},
+
+  {
+    "nvim-mini/mini.nvim",
+    version = false,
+  },
 }
