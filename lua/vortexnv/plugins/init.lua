@@ -30,6 +30,16 @@ return {
   },
 
   {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+  },
+
+  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
