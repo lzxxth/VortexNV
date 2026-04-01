@@ -56,7 +56,7 @@ return {
       return require("vortenx.configs.blink")
     end,
     opts_extend = { "sources.default" }
-  }
+  },
 
   {
     'nvim-lualine/lualine.nvim',
