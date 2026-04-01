@@ -30,6 +30,35 @@ return {
   },
 
   {
+    "neovim/nvim-lspconfig",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      return require("vortexnv.configs.lspconfig")
+    end,
+  },
+
+  {
+    "L3MON4D3/LuaSnip",
+    enabled = true,
+  },
+
+  {
+    "mason-org/mason.nvim",
+    opts = function()
+      return require("vortenx.configs.mason")
+    end,
+  },
+
+  {
+    "saghen/blink.cmp",
+    enabled = true,
+    opts = function()
+      return require("vortenx.configs.blink")
+    end,
+    opts_extend = { "sources.default" }
+  }
+
+  {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
