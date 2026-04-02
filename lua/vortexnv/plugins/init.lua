@@ -53,6 +53,11 @@ return {
   },
 
   {
+    "rafamadriz/friendly-snippets",
+    lazy = true,
+  },
+
+  {
     "saghen/blink.cmp",
     enabled = true,
     opts = function()
