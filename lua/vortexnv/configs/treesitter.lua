@@ -1,4 +1,4 @@
 return {
-	ensure_installed = { "lua", "luadoc", "dart", "c_sharp" },
+	ensure_installed = { "lua", "luadoc", "dart" },
 	highlight = { enable = true },
 }
