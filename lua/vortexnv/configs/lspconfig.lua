@@ -1,7 +1,7 @@
 local servers = {
   lua_ls = {},
   clangd = {},
-  csharp_ls = {},
+  roslyn = {},
   dartls = {},
 }
 
