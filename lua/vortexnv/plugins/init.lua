@@ -37,12 +37,6 @@ return {
   },
 
   {
-    "seblyng/roslyn.nvim",
-    ft = { "cs" },
-    opts = {},
-  },
-  
-  {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
