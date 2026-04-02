@@ -54,7 +54,7 @@ return {
 
   {
     "rafamadriz/friendly-snippets",
-    lazy = true,
+    lazy = false,
   },
 
   {
