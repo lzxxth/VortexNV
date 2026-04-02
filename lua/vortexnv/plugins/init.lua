@@ -30,23 +30,20 @@ return {
   },
 
   {
+    "mason-org/mason.nvim",
+  },
+  
+  {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      return require("vortexnv.configs.lspconfig")
+      return require("vortenx.configs.lspconfig")
     end,
   },
 
   {
     "L3MON4D3/LuaSnip",
     enabled = true,
-  },
-
-  {
-    "mason-org/mason.nvim",
-    opts = function()
-      return require("vortenx.configs.mason")
-    end,
   },
 
   {
