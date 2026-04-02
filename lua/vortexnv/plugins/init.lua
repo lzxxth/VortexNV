@@ -35,6 +35,11 @@ return {
         return require("vortexnv.configs.mason")
     end,
   },
+
+  {
+    "seblyng/roslyn.nvim",
+    opts = {},
+  },
   
   {
     "neovim/nvim-lspconfig",
