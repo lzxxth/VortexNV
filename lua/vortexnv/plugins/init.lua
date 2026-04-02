@@ -59,7 +59,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      return require("vortenx.configs.lualine")
+      return require("vortexnv.configs.lualine")
     end,
   },
 
