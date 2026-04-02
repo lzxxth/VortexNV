@@ -31,6 +31,9 @@ return {
 
   {
     "mason-org/mason.nvim",
+    config = function()
+        return require("vortexnv.configs.mason")
+    end,
   },
   
   {
