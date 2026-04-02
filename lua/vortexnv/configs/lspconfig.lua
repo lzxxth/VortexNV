@@ -1,5 +1,3 @@
-local lspconfig = vim.lsp.config
-
 local servers = {
   lua_ls = {},
   clangd = {},
@@ -9,5 +7,7 @@ local servers = {
 
 for server, config in pairs(servers) do
   config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-  lspconfig[server].setup(config)
+
+  vim.lsp.config(server, config)
+  vim.lsp.enable(server)
 end
