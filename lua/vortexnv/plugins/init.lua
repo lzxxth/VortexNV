@@ -37,7 +37,7 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      return require("vortenx.configs.lspconfig")
+      return require("vortexnv.configs.lspconfig")
     end,
   },
 
@@ -59,7 +59,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      return require("vortexnv.configs.lualine")
+      return require("vortenx.configs.lualine")
     end,
   },
 
