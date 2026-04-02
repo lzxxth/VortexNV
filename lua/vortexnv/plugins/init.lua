@@ -50,7 +50,7 @@ return {
     "saghen/blink.cmp",
     enabled = true,
     opts = function()
-      return require("vortenx.configs.blink")
+      return require("vortexnv.configs.blink")
     end,
     opts_extend = { "sources.default" }
   },
