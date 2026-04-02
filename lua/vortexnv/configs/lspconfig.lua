@@ -1,9 +1,9 @@
-local lspconfig = require('lspconfig')
+local lspconfig = vim.lsp.config
 
 local servers = {
   lua_ls = {},
   clangd = {},
-  csharp_ls_ = {},
+  csharp_ls = {},
   dartls = {},
 }
 
