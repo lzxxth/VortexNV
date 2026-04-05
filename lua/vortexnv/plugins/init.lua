@@ -11,7 +11,9 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
+    event = { "BufReadPost", "BufNewFile" },
+    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
+		build = ":TSUpdate | TSInstallAll",
 		opts = function()
 			return require("vortexnv.configs.treesitter")
 		end,
@@ -40,7 +42,7 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      return require("vortexnv.configs.lspconfig")
+      return require("vortexnv.configs.lspconfig").defaults()
     end,
   },
 
