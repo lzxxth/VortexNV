@@ -2,6 +2,7 @@ local servers = {
   lua_ls = {},
   clangd = {},
   dartls = {},
+  jdtls = {},
 }
 
 for server, config in pairs(servers) do
